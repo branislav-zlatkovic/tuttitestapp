@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context=".ui.fragment.LoginFragment">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:text="@string/welcome"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32sp"
+        android:paddingBottom="32dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_text"
+        app:errorEnabled="true">
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/AuthEditTextStyle.Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_email"
+            android:text=""/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/go_button"
+        style="@style/AuthButton"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/go"/>
+
+</RelativeLayout>

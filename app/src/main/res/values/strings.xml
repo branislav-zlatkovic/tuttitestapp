@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TuttiTestApp</string>
+
+    <!-- LOGIN / SIGNUP -->
+    <string name="welcome">Welcome</string>
+    <string name="prompt_email">Email</string>
+    <string name="go">Go</string>
+    <string name="loading">Loading&#8230;</string>
+
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_email">Not a valid email</string>
+
+    <string name="error_no_user">No user found with the given email</string>
+    <string name="error_generic">Something went wrong, please try again later</string>
+
+</resources>
